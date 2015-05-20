@@ -9,6 +9,11 @@ import contextlib
 import ftplib
 import sys
 import urllib.request
+import urllib.parse
+import json
+import pprint
+from collections import defaultdict
+import glob
 __author__ = "alex"
 __date__ = "$May 15, 2015 7:31:22 PM$"
 
@@ -138,6 +143,54 @@ if __name__ == "__main__":
 
 
     #ex9 - urllib for ftp
-    readme = "ftp://ftp.ibiblio.org/pub/docs/books/gutenberg/README"
-    with urllib.request.urlopen(readme) as response:
-        sys.stdout.write( response.read().decode("ascii"))
+#    readme = "ftp://ftp.ibiblio.org/pub/docs/books/gutenberg/README"
+#    with urllib.request.urlopen(readme) as response:
+#        sys.stdout.write( response.read().decode("ascii"))
+
+#    ex10 - parse get data via REST 
+#    query_currencies = "https://api.coinbase.com/v1/currencies/"
+#    with urllib.request.urlopen(query_currencies) as document:
+#        print(document.info().items())
+#        currencies=json.loads(document.read().decode("utf-8"))
+#        for c in currencies:
+#            print (c)
+        
+        
+    #ex11 - get currency by code (parse json here) + encoding for URL +save data to local json file
+#    def get_spot_rate(currency):
+#        form = {"currency":"GBP"}
+#        scheme_netloc_path = "https://api.coinbase.com/v1/prices/spot_rate"
+#        query = urllib.parse.urlencode(form)
+#        with urllib.request.urlopen(scheme_netloc_path+"?"+query ) as document:
+#             pprint.pprint(document.info().items())
+#             spot_rate =json.loads(document.read().decode("utf-8"))
+#             print (spot_rate)
+#        return spot_rate
+#    
+#    rates = [get_spot_rate("USD"),get_spot_rate("GBP"),get_spot_rate("EUR")]
+#    
+#    with open("rate.json","w") as save:
+#        json.dump(rates,save)
+#             
+   #ex12  - tuple
+   
+#   a,b = "FOO","BAR"
+#   print (a,b)
+#   key=lambda x:x[1]
+#   print ((key)((a,b)))
+
+   #ex13 - currency conversion ()
+#    query_exchange_rates = "https://api.coinbase.com/v1/currencies/exchange_rates"
+#    with urllib.request.urlopen(query_exchange_rates) as document:
+#        pprint.pprint(document.info().items())
+#        exchange_rates=json.loads(document.read().decode("utf-8"))
+#    rates = defaultdict(list)
+#    for conversion,rate in exchange_rates.items():
+#       source,_,target = conversion.upper().partition("_TO_")
+#       rates[source].append((target,float(rate)))
+#       for c in 'USD','GBP','EUR':
+#         print (c,rates[c])
+  
+   
+   
+   
