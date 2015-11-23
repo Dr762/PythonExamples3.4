@@ -11,7 +11,8 @@ start = time.time()
 inp=input("Введите дату рождения: " )
 
 end=time.time()
-print("Время ввода: "+end-start+'\n')
+delta=end-start
+print(delta)
 start1 = time.time()
 inp1=input("Ваша дата рождения верна?(да/нет) ")
 
@@ -19,12 +20,14 @@ inp1=input("Ваша дата рождения верна?(да/нет) ")
 if inp1=="да":
      print('все отлично \n')
      end1 = time.time()
-     print("Время вывода: "+end1-start1+'\n')
+     delta=end1-start1
+     print(delta)
 
 if inp1=="нет":
      print('проверьте её \n')
      end1 = time.time()
-     print("Время вывода: "+end1-start1+'\n')
+     delta = end1-start1
+     print(delta)
 
 
 
