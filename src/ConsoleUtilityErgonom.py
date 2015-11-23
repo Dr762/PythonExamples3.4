@@ -7,23 +7,24 @@ import time
 
 print("Консольная утилита для анализа времени оценки информации полученной с экрана \n")
 
-
+start = time.time()
 inp=input("Введите дату рождения: " )
 
-
-start = time.time()
+end=time.time()
+print("Время ввода: "+end-start+'\n')
+start1 = time.time()
 inp1=input("Ваша дата рождения верна?(да/нет) ")
 
 
 if inp1=="да":
      print('все отлично \n')
-     end = time.time()
-     print(end-start)
+     end1 = time.time()
+     print("Время вывода: "+end1-start1+'\n')
 
 if inp1=="нет":
      print('проверьте её \n')
-     end = time.time()
-     print(end-start)
+     end1 = time.time()
+     print("Время вывода: "+end1-start1+'\n')
 
 
 
