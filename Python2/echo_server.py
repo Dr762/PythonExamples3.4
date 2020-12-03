@@ -1,8 +1,10 @@
+from __future__ import with_statement
+
 import multitask
 import socket
 import sys
 
-from __future__ import with_statement
+
 from with_example import closing
 
 
