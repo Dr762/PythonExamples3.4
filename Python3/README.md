@@ -44,3 +44,16 @@ Run ```python3 restaurant_finder.py```
 
 15. Urllib - library usage examples.
 Run ```python3 urllib_base.py```
+
+16. Crud App - small CRUD application with database.
+
+Run
+
+```
+cd SmallCrudApp
+python3 db_setup.py
+
+python3 webserver.py
+```
+
+Access via localhost:8024
