@@ -1,7 +1,6 @@
 import contextlib
 import http
 
-# http client which gets two pictures and changing request headers
 path_list = ["/wikipedia/commons/7/72/IPhone_Internals.jpg",
              "/wikipedia/en/c/c1/1drachmi_1973.jpg"]
 host = "upload.wikimedia.org"

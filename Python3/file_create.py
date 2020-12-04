@@ -1,4 +1,3 @@
-#  create file and read from it
 text = """We are the people """
 
 with open("message.txt","w") as target:

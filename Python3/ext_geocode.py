@@ -8,7 +8,6 @@ import string
 from math import radians, sin, cos, sqrt, asin
 
 
-# calc distance for two points,geoCode it , do maidenhead grid coding +geoRef + NAC
 
 MI = 3959
 NM = 3440
@@ -140,5 +139,3 @@ n = nac(base[0], base[1])
 print("Encode base to NAC", n)
 print("Decode base from maidenhead", decode_maid(maiden))
 print("Decode base from NAC", nac_decode(n))
-
-

@@ -1,4 +1,4 @@
-# Python3Examples
+# Python Examples
 
 Set of Python 2 and 3 examples.
 

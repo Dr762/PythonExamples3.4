@@ -3,7 +3,7 @@ import pprint
 import json
 
 
-#  get currency by cod,parse json,encoding for URL .save data to local json file
+
 def get_spot_rate(currency):
     form = {"currency": "GBP"}
     scheme_netloc_path = "https://api.coinbase.com/v1/prices/spot_rate"
